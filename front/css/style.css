@@ -105,10 +105,10 @@ h2 {
 /*banniere*/
 .banniere {
   width: 100%;
-  height: 550px;
-  object-fit: cover;
+  height: 50vh;
+  object-fit: scale-down;
+  object-position: top;
   display: flex;
-  opacity: 0.6;
 }
 
 /******/
