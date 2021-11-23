@@ -21,7 +21,7 @@ function addProducts(ducks) {
     const { _id, imageUrl, altTxt, name, description } = duck
     const anchor = makeAnchor(_id)
     const article = document.createElement("article")
-    const image = makeImage(imageUrl, altTxt)
+    const image = makeImageDiv(imageUrl, altTxt)
     const h3 = makeH3(name)
     const p = makeParagraph(description)
 
@@ -52,7 +52,7 @@ function appendArticleToAnchor(anchor, article) {
     anchor.appendChild(article)
   }
 }
-function makeImage(imageUrl, altTxt) {
+function makeImageDiv(imageUrl, altTxt) {
   const image = document.createElement("img")
   image.src = imageUrl
   image.alt = altTxt
